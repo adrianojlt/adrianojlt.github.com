@@ -1,0 +1,92 @@
+
+<div class="row">
+	<div class="span12">
+
+        <h1>Accordion Menu</h1>
+
+        <p>It's a <a href="http://jquery.com/">jQuery</a> accordion menu plugin, and I call it <strong>acc3menu</strong>!</p>
+        <p><strong>acc3menu</strong> allows you to create a tree level accordion menu</p>
+
+        <ul>
+            <li>Comsumes less space</li>
+            <li>Damn sexy</li>
+            <li>Not another dull form (y'know, something different, breaking the habit)</li>
+        </ul>
+
+        <p>Your form requires little modification, so even if JavaScript is turned off <span class="muted">or Promin fails to deliver</span>, your form won't break.<br>
+
+        I've tried several browsers on <strong>desktops</strong>, <strong>tablets</strong> and <strong>phones</strong>. So far, everything seems to work like a charm.</p>
+    </div>
+</div>
+
+<div class="row">
+	<div class="span12">
+		<h3>How does one implement?</h3>
+
+        <p>It all starts with a single line of JavaScript code...</p>
+        <pre>$( form ).acc3menu( options );</pre>
+
+        <p>... and the HTML code</p>
+
+        <!--
+        <pre>
+&lt;form&gt;
+    &lt;textarea class="pm-step"&gt;&lt;/textarea&gt;
+
+    &lt;div class="pm-step"&gt;
+        &lt;p&gt;Almost done now...&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="pm-step"&gt;
+        &lt;p&gt;Input with description&lt;/p&gt;
+        &lt;input type="text" /&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+		</pre>
+		-->
+
+		<!--<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">-->
+		<div>
+		<pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>link 1 Level 1<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>subLink1<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>subLink2<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>subLink3<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>link 2 Level 1<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>subLink1<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>link 3 Level 1<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+                <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>subLink1<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+                    <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>subSubLink1<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>subSubLink2<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>subSubLink3<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+</pre></div>
+
+
+
+    </div>
+</div>
+
+<!--
+<div class="row">
+  <div class="span4"><div class="hero-unit">level 2</div></div>
+  <div class="span4"><div class="hero-unit">level 2</div></div>
+  <div class="span4"><div class="hero-unit">level 2</div></div>
+</div>
+-->

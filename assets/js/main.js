@@ -1,11 +1,19 @@
 
-$(document).ready(function() {
+function loadPages() {
 
 	var nav = $('#mainMenu a');
 
 	$(nav[0]).parent().addClass('active');
+
+	var width = 0;
+
+	//$(window).resize(function() {console.log($(this).width())});
 	
 	nav.on('click', function(e) {
+
+		// mobile devices ... hide menu when a menu entry is clicked ...
+		//$('.btn-navbar').trigger('click');
+		//console.log($('.btn-navbar'));
 
 		e.preventDefault();
 
@@ -18,5 +26,4 @@ $(document).ready(function() {
       		$(this).fadeIn(400);
     	});
 	});
-
-});
+}
