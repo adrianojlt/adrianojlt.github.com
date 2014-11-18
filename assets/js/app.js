@@ -20,6 +20,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     // Blog
     .when("/blog",      {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
+    .when("/acc3menu",  {templateUrl:  "partials/accordionMenu.html", controller: "BlogCtrl"})
     // else 404
     .otherwise("/404",  {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
@@ -35,8 +36,8 @@ app.controller('MainController', function ( $scope, $location/*, $http */) {
 
      var active = (viewLocation === $location.path());
 
-     console.log(viewLocation);
-     console.log(active);
+     //console.log(viewLocation);
+     //console.log(active);
 
      return active;
   };
