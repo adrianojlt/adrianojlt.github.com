@@ -1,36 +1,46 @@
-/**
- * AngularJS Tutorial 1
- * @author Nick Kaye <nick.c.kaye@gmail.com>
- */
 
 /**
  * Main AngularJS Web Application
  */
-var app = angular.module('tutorialWebApp', [
-  'ngRoute'
-]);
+var app = angular.module('tutorialWebApp', ['ngRoute']);
 
 /**
  * Configure the Routes
  */
- /*
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
     .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
     // Pages
-    .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
-    .when("/faq", {templateUrl: "partials/faq.html", controller: "PageCtrl"})
-    .when("/pricing", {templateUrl: "partials/pricing.html", controller: "PageCtrl"})
-    .when("/services", {templateUrl: "partials/services.html", controller: "PageCtrl"})
-    .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+    .when("/clipx",     {templateUrl: "partials/clipx.htm", controller: "PageCtrl"})
+    .when("/service",   {templateUrl: "partials/serviceManager.htm", controller: "PageCtrl"})
+    .when("/services",  {templateUrl: "partials/services.html", controller: "PageCtrl"})
+    .when("/contact",   {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+    .when("/about",     {templateUrl: "partials/about.html", controller: "PageCtrl"})
     // Blog
-    .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
+    .when("/blog",      {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
     // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+    .otherwise("/404",  {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
-*/
+
+/**
+ * 
+ */
+app.controller('MainController', function ( $scope, $location/*, $http */) {
+
+  //console.log("Main controller");
+
+  $scope.isActive = function (viewLocation) {
+
+     var active = (viewLocation === $location.path());
+
+     console.log(viewLocation);
+     console.log(active);
+
+     return active;
+  };
+});
 
 /**
  * Controls the Blog
