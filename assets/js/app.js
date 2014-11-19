@@ -10,7 +10,7 @@ var app = angular.module('tutorialWebApp', ['ngRoute']);
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+    .when("/", {templateUrl: "partials/home.htm", controller: "PageCtrl"})
     // Pages
     .when("/clipx",     {templateUrl: "partials/clipx.htm", controller: "PageCtrl"})
     .when("/service",   {templateUrl: "partials/serviceManager.htm", controller: "PageCtrl"})
