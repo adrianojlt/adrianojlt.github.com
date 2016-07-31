@@ -1,1 +1,9 @@
-# webpage
+# web page built with angular 1.x
+
+webpage in master branch will be the only visible
+
+# copy other branches to master 'hard reset'
+git reset --hard other_branch
+
+# force sending changes 
+git push -f origin master 
