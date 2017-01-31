@@ -7,3 +7,6 @@ git reset --hard other_branch
 
 # force sending changes 
 git push -f origin master 
+
+# push all tags and branche
+git push --all origin
