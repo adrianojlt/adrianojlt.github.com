@@ -1,6 +1,6 @@
 # web page built with Angular 2.x
 
-webpage in master branch will be the only visible
+Webpage in master branch will be the only visible
 
 # copy other branches to master 'hard reset'
 git reset --hard other_branch
@@ -8,5 +8,8 @@ git reset --hard other_branch
 # force sending changes 
 git push -f origin master 
 
-# push all tags and branche
+# push all tags and branches
 git push --all origin
+
+# pull all tags and branches
+git pull --all origin
