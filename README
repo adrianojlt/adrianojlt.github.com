@@ -2,6 +2,10 @@
 
 Webpage in master branch will be the only visible
 
+# reset master branch (master will always be a angular1 or angular2 branch copy)
+git reset --hard HEAD
+git pull
+
 # copy other branches to master 'hard reset'
 git reset --hard other_branch
 
@@ -10,6 +14,7 @@ git push -f origin master
 
 # push all tags and branches
 git push --all origin
+
 
 # pull all tags and branches
 git pull --all origin
